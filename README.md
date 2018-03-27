@@ -10,7 +10,7 @@ You can:
 
 ## Deploy GLPI only (no database)
 
-```docker run -it -d -p 80:80 driket54/glpi```
+```docker run -it -d -p 80:80 ferweb2018/glpi-infile```
 
 ## Deploy with docker-compose
 
@@ -22,7 +22,7 @@ You can deploy GLPI + database by creating 2 files:
 
 ```yml
 glpi:
-  image: driket54/glpi
+  image: ferweb2018/glpi-infile
   ports:
     - "8090:80"
   links:
@@ -43,7 +43,7 @@ MYSQL_ROOT_PASSWORD=rootpasswd
 MYSQL_DATABASE=glpi
 MYSQL_USER=glpi
 MYSQL_PASSWORD=glpipaswd
-GLPI_SOURCE_URL=https://forge.glpi-project.org/attachments/download/2020/glpi-0.85.4.tar.gz
+GLPI_SOURCE_URL=http://prografinal.hol.es/glpi-9.1.6.tar.gz
 ```
 
 ### Run docker-compose
