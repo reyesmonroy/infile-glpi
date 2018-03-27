@@ -1,26 +1,31 @@
-version: '2'
+# GLPI persistent data
+glpidata:
+  image: ubuntu
+  volumes:
+    - /var/www/html/glpi
 
-services:
-    # GLPI container
-    glpi:
-        build: .
-        ports:
-            - "8085:80"
-        links:
-            - mysql:db
-        env_file:
-            - ./glpi.env
-        volumes:
-            - glpi_data:/var/www/html/glpi
+# GLPI container
+glpi:
+  image: ferweb2018/glpi-infile
+  ports:
+    - "8090:80"
+  links:
+    - mysql:db
+  env_file:
+    - ./glpi.env
+  volumes_from:
+    - glpidata
 
-    # Database container
-    mysql:
-        image: mariadb
-        env_file:
-            - ./glpi.env
-        volumes:
-            - mysql_data:/var/lib/mysql
+# Database persistent data
+mysqldata:
+  image: ubuntu
+  volumes:
+    - /var/lib/mysql
 
-volumes:
-    glpi_data: {}
-    mysql_data: {}
+# Database container
+mysql:
+  image: mariadb
+  env_file:
+    - ./glpi.env
+  volumes_from:
+    - mysqldata
