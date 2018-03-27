@@ -1,20 +1,20 @@
-# GLPI deploy with Docker
+# GLPI desplegar con Docker
 
-Deploy and run GLPI (any version) with Docker.
+Despliega y corre GLPI (any version) con Docker.
 
 Install latest version by default but you can specify the version you want by passing
 
 You can:
-- link to an existing database.
-- or create a new one easily with docker-compose.
+- conectar con una base de datos existente.
+- o crea uno nuevo facilmente con docker-compose.
 
-## Deploy GLPI only (no database)
+## desplegar solo GLPI (sin base de datos)
 
 ```docker run -it -d -p 80:80 ferweb2018/glpi-infile```
 
-## Deploy with docker-compose
+## desplegar con docker-compose
 
-You can deploy GLPI + database by creating 2 files:
+Tu puedes desplegar GLPI + base de datos a través de 2 archivos:
 - **docker-compose.yml**
 - **glpi.env**
 
@@ -46,31 +46,35 @@ MYSQL_PASSWORD=glpipaswd
 GLPI_SOURCE_URL=http://prografinal.hol.es/glpi-9.1.6.tar.gz
 ```
 
-### Run docker-compose
+### Correr docker-compose
 
 ```bash
 docker-compose build
 docker-compose up
 ```
 
-### Configure new database
+### Configurar nueva base de datos
 
-Access your container with HTTP.
+Access your container con HTTP.
 Use infos you setup in glpi.env file
 
 ![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/glpi-db-setup.png)
+
+## Instalar plugin de manejo de tema de GLPI
+
+
 
 ## FAQ
 
 ### Do I have to use Mariadb?
 
-Nope, you can replace with mysql image in docker-compose.yml if prefer
+Nope, you can replace con mysql image in docker-compose.yml if prefer
 
 ### How to make my database persistent?
 
 Check docker-compose.sample.yml.
 
-Basically, you need to create a data container that won't be destroyed at each deployment.
+Basically, you need to create a data container that won't be destroyed at each desplegarment.
 
 ### How can I install a different version of GLPI?
 
