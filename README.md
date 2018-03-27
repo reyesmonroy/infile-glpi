@@ -68,6 +68,24 @@ Use infos you setup in glpi.env file
 sudo docker ps -a
 ```
 
+-Ejecutar comando para entrar al contenedor de la imagen ferweb2018/glpi-infile solo debemos agregar el ID del contenedor
+
+```bash
+sudo docker exec -i -t ID_CONTAINER /bin/bash
+```
+
+-Estando en el contenedor debemos ingresar a la carpeta de pluging con el siguiente comando
+
+```bash
+cd /var/www/html/glpi/plugins
+```
+
+-En la carpeta plugin descomprimir el paquete tar con el comando siguiente para instalarlo desde GLPI Configuracion>Plugins instalarlo, activarlo y listo para usarlo  
+
+```bash
+tar -xvzf Plugin_mod-9.1.6-1.1.3.tar.gz
+```
+
 ## FAQ
 
 ### Do I have to use Mariadb?
