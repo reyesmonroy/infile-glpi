@@ -67,6 +67,7 @@ Use infos you setup in glpi.env file
 ```bash
 sudo docker ps -a
 ```
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/comando%20ps.png)
 
 -Ejecutar comando para entrar al contenedor de la imagen ferweb2018/glpi-infile solo debemos agregar el ID del contenedor
 
@@ -85,6 +86,8 @@ cd /var/www/html/glpi/plugins
 ```bash
 tar -xvzf Plugin_mod-9.1.6-1.1.3.tar.gz
 ```
+
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/temas.png)
 
 ## FAQ
 
