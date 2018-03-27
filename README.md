@@ -1,18 +1,18 @@
 # GLPI desplegar con Docker
 
-Despliega y corre GLPI (any version) con Docker.
+Despliega y corre GLPI (alguna version) con Docker.
 
-Install latest version by default but you can specify the version you want by passing
+Instalar la ultima version por defecto pero puede cambiar la version que desee o necesite
 
-You can:
+Puedes:
 - conectar con una base de datos existente.
 - o crea uno nuevo facilmente con docker-compose.
 
-## desplegar solo GLPI (sin base de datos)
+## Desplegar solo GLPI (sin base de datos)
 
 ```docker run -it -d -p 80:80 ferweb2018/glpi-infile```
 
-## desplegar con docker-compose
+## Desplegar con docker-compose
 
 Tu puedes desplegar GLPI + base de datos a través de 2 archivos:
 - **docker-compose.yml**
@@ -62,7 +62,11 @@ Use infos you setup in glpi.env file
 
 ## Instalar plugin de manejo de tema de GLPI
 
+-Ejecutar comando para mostrar el listado de contenedores
 
+```bash
+sudo docker ps -a
+```
 
 ## FAQ
 
