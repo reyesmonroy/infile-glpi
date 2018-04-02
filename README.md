@@ -55,10 +55,22 @@ docker-compose up
 
 ### Configurar nueva base de datos
 
-Access your container con HTTP.
-Use infos you setup in glpi.env file
+Accesar a tu container con HTTP.
+Utilizar la informacion en el archivo glpi.env
 
 ![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/glpi-db-setup.png)
+
+-Seleccionar la base de datos correcta de glpi
+
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/glpi-db-seleccionar.png)
+
+## Cambiar el color del tema de GLPI
+
+- Ingresar a preferencias con el símbolo de engranaje que se encuentra en la parte superior izquierda de nuestro navegador al lado izquierdo del salir del sistema.
+
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/seleccion-tema-color.png)
+
+-Seleccionar el tema Flood, puede seleccionar cualquiera a su gusto para personalizarlo y darle click al botón de registrar.
 
 ## Instalar plugin de manejo de tema de GLPI
 
