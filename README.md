@@ -66,7 +66,7 @@ Utilizar la informacion en el archivo glpi.env
 
 ## Cambiar el color del tema de GLPI
 
-- Ingresar a preferencias con el símbolo de engranaje que se encuentra en la parte superior izquierda de nuestro navegador al lado izquierdo del salir del sistema.
+- Ingresar a preferencias con el símbolo de engranaje que se encuentra en la parte superior izquierda de nuestro navegador al lado izquierdo del salir del sistema. Después seleccionar la pestaña personalización.
 
 ![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/seleccion-tema-color.png)
 
@@ -87,19 +87,37 @@ sudo docker ps -a
 sudo docker exec -i -t ID_CONTAINER /bin/bash
 ```
 
--Estando en el contenedor debemos ingresar a la carpeta de pluging con el siguiente comando
+-Estando en el contenedor debemos ingresar a la carpeta de plugin con el siguiente comando
 
 ```bash
 cd /var/www/html/glpi/plugins
 ```
 
--En la carpeta plugin descomprimir el paquete tar con el comando siguiente para instalarlo desde GLPI Configuracion>Plugins instalarlo, activarlo y listo para usarlo  
+-En la carpeta plugin descomprimir el paquete tar con el comando siguiente para instalarlo desde GLPI Configuracion>Plugins instalarlo.  
 
 ```bash
 tar -xvzf Plugin_mod-9.1.6-1.1.3.tar.gz
 ```
 
+-Para salir del contenedor y regresar a la terminal estandar.  
+
+```bash
+exit
+```
+
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/instalacion-tema.png)
+
+-Ya instalado hay que activarlo desde la interfaz gráfica.
+
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/activar-tema.png)
+
+-Ahora configuralo dándole click sobre el nombre del plugin.
+
 ![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/temas.png)
+
+-Vista de la configuración del plugin en donde se puede seleccionar fondo de pagina de inicio de sesión y el logotipo.
+
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/configurar-plugin.png)
 
 ## FAQ
 
