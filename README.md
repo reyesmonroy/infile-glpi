@@ -99,17 +99,17 @@ cd /var/www/html/glpi/plugins
 tar -xvzf Plugin_mod-9.1.6-1.1.3.tar.gz
 ```
 
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/instalacion-tema.png)
+
 -Para salir del contenedor y regresar a la terminal estandar.  
 
 ```bash
 exit
 ```
 
-![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/instalacion-tema.png)
-
 -Ya instalado hay que activarlo desde la interfaz gráfica.
 
-![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/activar-tema.png)
+![alt tag]( https://github.com/reyesmonroy/infile-glpi/blob/master/doc/activar-plugin.png)
 
 -Ahora configuralo dándole click sobre el nombre del plugin.
 
